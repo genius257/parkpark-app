@@ -1,0 +1,32 @@
+table{
+    border-collapse: collapse;
+}
+tbody{
+    height:250px;
+    overflow-x: hidden;
+    overflow-y:scroll;
+}
+table, th, td{
+    border: 1px solid #000;
+}
+th, td{
+    padding:15px;
+}
+th {
+    background-color: #4CAF50;
+    color: white;
+}
+tr:nth-child(even) {background-color: #f2f2f2}
+tr:hover {background-color: #d5f5d5}
+.link{
+    text-decoration: underline;
+    color: #0000EE;
+}
+
+thead, tbody, tr { display: flex; }
+thead{padding-right: 17px;}
+tr{flex-grow: 0;flex-shrink:0;}
+thead,tbody{flex-direction: column;}
+th,td{
+    width:33%;
+}
