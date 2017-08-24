@@ -15,7 +15,7 @@ export class MapContainer extends Component {
   }
 
   componentDidMount () {
-    fetch('http://data.kk.dk/parking/latest/50')
+    fetch('https://cors-anywhere.herokuapp.com/http://data.kk.dk/parking/latest/50')
         .then((response) => response.json())
         .then((json) => {
             //this.setState({ parkingData: json });
@@ -27,6 +27,7 @@ export class MapContainer extends Component {
         })
         .catch((err) => {
             // Handle error
+            alert('a problem occurred when loading parking data');
         })
   }
 
